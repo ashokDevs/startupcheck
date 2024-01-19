@@ -1,11 +1,14 @@
 
 
 import { InputForm } from "./Components/InputForm";
+import Navbar from "./Components/Navbar";
 
 export default function Home() {
+  console.log("hello")
   return (
     <main>
-      <div className="bg-base-100 herobg bg-cover flex text-center flex-col items-center overflow-x-hidden justify-between pt-32 px-4  h-screen w-screen lg:pt-20 md:px-0">
+      <Navbar/>
+      <div className=" overflow-none bg-base-100 herobg bg-cover flex text-center flex-col items-center overflow-x-hidden justify-between pt-32 px-4  h-screen w-screen lg:pt-20 md:px-0">
         <div className="flex flex-col items-center max-w-2xl md:px-8">
           <div className="max-w-screen mb-5 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
             <h1 className="w-full text-center text-3xl mb-6 text-base-content font-sans md:text-7xl font-bold leading-[79.2px] tracking-tight  sm:text-4xl md:mx-auto">
@@ -55,7 +58,7 @@ export default function Home() {
                   /*                   onClick={(e) => handleJoinWaitlist(e)} */
                 >
                   Submit
-                  <svg
+                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon icon-tabler icon-tabler-arrow-right-tail"
                     width="24"
@@ -71,7 +74,7 @@ export default function Home() {
                     <path d="M18 15l3 -3l-3 -3" />
                     <path d="M3 15l3 -3l-3 -3" />
                     <path d="M6 12l15 0" />
-                  </svg>
+                  </svg> */}
                 </button>
               </div>
             </form>
