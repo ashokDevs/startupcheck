@@ -10,7 +10,7 @@ async function GatherItems(tab) {
     if (tab === "Product") {
       const { data: items, error } = await supabase
         .from("items")
-        .select("title, desc")
+        .select("title, desc,Impact")
         .eq("subcategory_id", 1);
 
       if (items) {
@@ -23,7 +23,7 @@ async function GatherItems(tab) {
     } else if (tab === "Process") {
       const { data: items, error } = await supabase
         .from("items")
-        .select("title, desc")
+        .select("title, desc,Impact")
         .eq("subcategory_id", 3);
 
       if (items) {
@@ -36,7 +36,7 @@ async function GatherItems(tab) {
     } else if (tab === "Price") {
       const { data: items, error } = await supabase
         .from("items")
-        .select("title, desc")
+        .select("title, desc,Impact")
         .eq("subcategory_id", 2);
 
       if (items) {
@@ -49,7 +49,7 @@ async function GatherItems(tab) {
     } else if (tab === "Promotion") {
       const { data: items, error } = await supabase
         .from("items")
-        .select("title, desc")
+        .select("title, desc,Impact")
         .eq("subcategory_id", 4);
 
       if (items) {
