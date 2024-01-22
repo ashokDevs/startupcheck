@@ -6,9 +6,9 @@ function Page() {
   return (
     <main> 
     <Navbar/>
-    <div className='mt-44'>
+    
     <TabsDesign h1="Process" h3="main part"/>
-    </div>
+    
     
   <div className="flex flex-col gap-4 ">
     

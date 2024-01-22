@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/utils/supabase.js", "app/Components/Formelement.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/utils/supabase.js", "app/Components/Formelement.tsx", "app/actions.js"],
   "exclude": ["node_modules"]
 }
