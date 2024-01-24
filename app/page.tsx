@@ -15,8 +15,7 @@ export default function Home() {
         <div className="flex flex-col items-center max-w-2xl md:px-8">
           <div className="max-w-screen mb-5 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
             <h1 className="w-full text-center text-3xl mb-6 text-base-content font-sans md:text-7xl font-bold leading-[79.2px] tracking-tight  sm:text-4xl md:mx-auto">
-              <span className="text-nowrap">10x MRR Growth</span> with
-              Our SaaS <span className="text-nowrap">Marketing Checklist</span>
+              Never lose a Customer 
             </h1>
             <p className="text-base-content md:text-lg">
               Evaluate your 4Ps(Product,Price,Promotion,Process) for enhanced

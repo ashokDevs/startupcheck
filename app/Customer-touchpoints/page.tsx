@@ -16,7 +16,7 @@ function Page() {
     <main className="max-w-screen  transition-all duration-1000 ease-in-out grid ">
       <Navbar />
       <div className="min-w-screen min-h-screen grid items-center gap-4">
-        <div className="flex flex-col items-center justify-center mt-44 transition-all duration-1000 ease-in-out">
+        <div className="flex flex-col items-center justify-center mt-28 transition-all duration-1000 ease-in-out">
           <h1 className="text-2xl text-base-content- font-bold md:text-5xl lg:text-7xl ">
             Customer Touchpoints️🙋‍♂️
           </h1>
@@ -32,7 +32,7 @@ function Page() {
             <div className="grid grid-cols-1 gap-4 place-items-center">
               {/* Use Link for each link */}
               <Link href="/Product" className=" link ">
-                Product📦 <br /><p>{productChecked}/10</p>
+                Product📦 <br /><p>{productChecked}/16</p>
               </Link>
               <Link className="indicator link linkNo  disabled" href="/Price">
         <span className="indicator-item badge badge-accent">comming soon</span>
