@@ -25,7 +25,7 @@ export default function Home() {
           </div>
 
 {/*           <InputForm />
- */}      <Link href="/Customer-touchpoints" className="btn btn-primary"> Show CHecklist</Link>
+ */}      <Link href="/Customer-touchpoints" className="btn btn-primary"> Show Checklist</Link>
           
 
           <br />

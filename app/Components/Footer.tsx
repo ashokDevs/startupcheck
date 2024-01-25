@@ -33,7 +33,7 @@ export const Footer = () => {
             <input
               type="text"
               placeholder="username@site.com"
-              className="input input-bordered join-item"
+              className="input input-bordered join-item w-52"
             />
             <button className="btn btn-primary join-item">Subscribe</button>
           </div>

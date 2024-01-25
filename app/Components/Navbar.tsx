@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 function Navbar() {
   return (
-    <div className="navbar bg-base-100 lg:w-[80%] mt-4 mx-auto md:mt-6">
+    <div className="navbar bg-base-100 lg:w-[80%] w-screen mt-4 mx-auto md:mt-6">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -47,7 +47,7 @@ function Navbar() {
             <Link href="/Pricing">Pricing</Link>
           </li>
           <li>
-            <Link href="/result">About</Link>
+            <Link href="/About">About</Link>
           </li>
 
           <li>
@@ -58,11 +58,12 @@ function Navbar() {
       <div className="navbar-end">
         <a
           href="https://twitter.com/indieashok"
-          className="btn btn-outline"
+          className="btn btn-outline hidden md:visible"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Follow on X
+          <img className="" src="/TwitterLogo.png" alt="Twitter Logo" />
+          Follow me
         </a>
       </div>
     </div>
