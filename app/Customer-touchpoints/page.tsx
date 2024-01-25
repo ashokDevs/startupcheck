@@ -1,14 +1,15 @@
-"use client";
-import React, { useState } from "react";
 import "./page.css"; // Assuming this file contains any additional CSS
 import Link from "next/link";
 import Navbar from "../Components/Navbar";
-import { Footer } from "../Components/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "SaaS checklist | Customer Touchpoints",
+  description: "SaaS, SaaS checkklist ,Customer Acquision",
+};
 
 function Page() {
-  const [productChecked, setProductChecked] = useState(0);
-  const [pricingChecked, setPricingChecked] = useState(0);
-  const [promotionChecked, setPromotionChecked] = useState(0);
+
 
   // ... rest of your code
 
@@ -17,7 +18,7 @@ function Page() {
       <Navbar />
       <div className="min-w-screen min-h-screen grid items-center gap-4">
         <div className="flex flex-col items-center justify-center mt-28 transition-all duration-1000 ease-in-out">
-          <h1 className="text-3xl text-base-content- font-bold md:text-5xl lg:text-7xl ">
+          <h1 className="text-5xl text-center text-base-content- font-bold md:text-5xl lg:text-7xl ">
             Customer Touchpoints️🙋‍♂️
           </h1>
           <h2 className="text-md text-center text-base-content opacity-7 md:text-lg w-[300px] md:w-[900px] mt-2 transform translate-y-4 ">
@@ -25,7 +26,7 @@ function Page() {
             satisfaction, build stronger relationships, and ultimately drive
             brand loyalty and increased revenue.
           </h2>
-          <Link className="btn btn-primary mt-7" href="/Product">
+          <Link className="btn btn-primary mt-7 text-lg" href="/Product">
             Get started
           </Link>
 
@@ -34,45 +35,38 @@ function Page() {
               {/* Use Link for each link */}
               <Link href="/Product" className=" link ">
                 Product📦 <br />
-                <p>{productChecked}/16</p>
+                <p>16 Items</p>
               </Link>
-              <Link className="indicator link linkNo  disabled" href="/Price">
-                <span className="indicator-item badge badge-accent">
-                  comming soon
-                </span>
+              <Link className="indicator link   disabled" href="/Price">
+              
                 <div>
                   Price💰
-                  <p className="text-sm">{pricingChecked}/8</p>
+                  <p className="text-sm">9 Items</p>
                 </div>
               </Link>
 
-              <Link className="indicator link linkNo " href="/Promotion">
-                <span className="indicator-item badge badge-accent">
-                  comming soon
-                </span>
+              <Link className="indicator link  " href="/Promotion">
+              
                 <div>
                   Promotion📈
-                  <p className="text-sm">{promotionChecked}/13</p>
+                  <p className="text-sm">16 Items</p>
                 </div>
               </Link>
 
               <Link
-                className="indicator link linkNo  cursor-not-allowed"
+                className="indicator link "
                 href="/Process"
               >
-                <span className="indicator-item badge badge-accent">
-                  comming soon
-                </span>
+              
                 <div>
                   Process🚶🏻
-                  <p className="text-sm">{productChecked}/15</p>
+                  <p className="text-sm">12 Items</p>
                 </div>
               </Link>
             </div>
           </div>
         </div>
       </div>
-      <Footer />
     </main>
   );
 }

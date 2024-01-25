@@ -26,14 +26,14 @@ function Navbar() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <Link href="item1">About</Link>
+              <Link href="/About">About</Link>
             </li>
             <li>
-              <Link href="/result">Pricing</Link>
+              <Link href="/Pricing">Pricing</Link>
             </li>
 
             <li>
-              <Link href="item3">blog</Link>
+              <Link href="/About">blog</Link>
             </li>
           </ul>
         </div>
@@ -51,14 +51,14 @@ function Navbar() {
           </li>
 
           <li>
-            <Link href="/result">blog</Link>
+            <Link href="/About">blog</Link>
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end ">
         <a
           href="https://twitter.com/indieashok"
-          className="btn btn-outline hidden md:visible"
+          className="btn btn-outline hidden  md:flex-row md:flex"
           target="_blank"
           rel="noopener noreferrer"
         >

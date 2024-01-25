@@ -18,7 +18,7 @@
     font-size: 1rem;
 }
   
-.link:first-of-type:hover:after {
+.link:hover:after {
     margin-right: 10px;
     content: "->"; /* Content of the arrow */
     position: absolute; /* Position independently of the list item */
@@ -29,17 +29,7 @@
     color: oklch(var(--bc)); /* Set arrow color */
   }
   
-.link:hover::after{
-    margin-right: 10px;
-    content: url("/icons8-lock.svg"); /* Content of the arrow */
-    position: absolute; /* Position independently of the list item */
-    right: 0; /* Place the arrow at the end of the list item */
-    top: 50%; /* Center the arrow vertically */
-    transform: translateY(-50%); /* Adjust vertical alignment */
-    ; /* Set arrow size */
-    color: oklch(var(--bc)); /* Set arrow color */
-
-}  
+ 
 
   ul {
     padding: 50px;
