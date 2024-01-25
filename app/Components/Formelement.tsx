@@ -75,7 +75,7 @@ const Formelement = (props: { tab: string }): JSX.Element => {
           ))}
       </Suspense>
         </div>
-      <div className="border px-4 py-6 ">
+     {/*  <div className="border px-4 py-6 ">
         <p>Your product has :{checked} </p> <br />
         {(() => {
           if (checked <= 5) {
@@ -84,7 +84,7 @@ const Formelement = (props: { tab: string }): JSX.Element => {
             return <p>Your product most likely gonna satisfy customers</p>;
           }
         })()}
-      </div>
+      </div> */}
     </main>
   );
 };
