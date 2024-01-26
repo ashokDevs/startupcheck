@@ -3,6 +3,7 @@ import Formelement from '../Components/Formelement'
 import Navbar from '../Components/Navbar';
 import TabsDesign from '../Components/TabsDesign';
 import type { Metadata } from "next";
+import BuyMeCoffee from '../Components/BuyMeCoffee';
 
 export const metadata: Metadata = {
   title: "SaaS checklist | Price",
@@ -21,6 +22,7 @@ function Page() {
       <div className="flex flex-col gap-4 ">
         <Formelement tab="Price" />
       </div>
+      <BuyMeCoffee/>
     </main>
   );
 }

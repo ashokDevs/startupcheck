@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 function Navbar() {
   return (
-    <div className="navbar bg-base-100 lg:w-[80%] w-screen mt-4 mx-auto md:mt-6">
+    <div className="navbar bg-base-100 lg:w-[80%] w-screen mt-4 mx-auto md:mt-6 ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -26,14 +26,14 @@ function Navbar() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <Link href="/About">About</Link>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <Link href="/Pricing">Pricing</Link>
+              <Link href="/pricing">Pricing</Link>
             </li>
 
             <li>
-              <Link href="/About">blog</Link>
+              <Link href="/about">blog</Link>
             </li>
             <li>
               <a
@@ -52,14 +52,14 @@ function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link href="/Pricing">Pricing</Link>
+            <Link href="/pricing">Pricing</Link>
           </li>
           <li>
-            <Link href="/About">About</Link>
+            <Link href="/about">About</Link>
           </li>
 
           <li>
-            <Link href="/About">blog</Link>
+            <Link href="/about">blog</Link>
           </li>
         </ul>
       </div>
@@ -70,15 +70,10 @@ function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
         >
+          Follow me on 
           <img className="" src="/TwitterLogo.png" alt="Twitter Logo" />
-          Follow me
         </a>
-        <a
-          className="hidden md:block"
-          href="https://www.buymeacoffee.com/ashokreddy"
-        >
-          <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=ashokreddy&button_colour=FFDD00&font_colour=000000&font_family=Arial&outline_colour=000000&coffee_colour=ffffff" />
-        </a>
+     
       </div>
     </div>
   );

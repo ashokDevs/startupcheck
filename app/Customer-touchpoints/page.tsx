@@ -24,36 +24,36 @@ function Page() {
             satisfaction, build stronger relationships, and ultimately drive
             brand loyalty and increased revenue.
           </h2>
-          <Link className="btn btn-primary mt-7 text-lg" href="/Product">
+          <Link className="btn btn-primary mt-7 text-lg" href="/product">
             Get started
           </Link>
 
           <div className="m-auto  py-8 w-screen md:px-4 px-2  bg-base-200  md:w-[50%] h-fit min-h-[500px] rounded-box mt-16 ">
             <div className="grid grid-cols-1 gap-4 place-items-center">
               {/* Use Link for each link */}
-              <Link href="/Product" className=" link ">
+              <Link href="/product" className=" link ">
                 Product📦 <br />
                 <p>16 Items</p>
               </Link>
-              <Link className="indicator link   disabled" href="/Price">
+              <Link className="indicator link   disabled" href="/price">
                 <div>
                   Price💰
                   <p className="text-sm">9 Items</p>
                 </div>
               </Link>
 
-              <Link className="indicator link  " href="/Promotion">
+              <Link className="indicator link  " href="/promotion">
                 <div>
                   Promotion📈
                   <p className="text-sm">16 Items</p>
                 </div>
               </Link>
 
-              <Link className="indicator link " href="/Processs">
+              <Link className="indicator link " href="/process">
                 <div>
                   Process🚶🏻
                   <p className="text-sm">12 Items</p>
-                  comming soon
+                 
                 </div>
               </Link>
             </div>
