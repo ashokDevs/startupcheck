@@ -9,15 +9,7 @@ export default function Home() {
 
   return (
     <main className="overflow-hidden">
-      <Head>
-        <meta property="og:title" content="SaaS Checklist" />
-        <meta
-          property="og:description"
-          content="Self Evalute your product for better customer acquision and rentention"
-        />
-        <meta property="og:image" content="/ogImage.png" />
-        
-      </Head>
+     
 
       <Navbar />
       <div className=" overflow-hidden bg-base-100 herobg bg-cover flex text-center flex-col items-center overflow-x-hidden justify-between pt-32 px-4  h-screen w-screen lg:pt-20 md:px-0">

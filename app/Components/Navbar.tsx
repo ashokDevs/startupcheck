@@ -58,12 +58,15 @@ function Navbar() {
       <div className="navbar-end ">
         <a
           href="https://twitter.com/indieashok"
-          className="btn btn-outline hidden  md:flex-row md:flex"
+          className="btn btn-outline hidden mr-2 md:flex-row md:flex"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img className="" src="/TwitterLogo.png" alt="Twitter Logo" />
           Follow me
+        </a>
+        <a href="https://www.buymeacoffee.com/ashokreddy">
+          <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=ashokreddy&button_colour=FFDD00&font_colour=000000&font_family=Arial&outline_colour=000000&coffee_colour=ffffff" />
         </a>
       </div>
     </div>

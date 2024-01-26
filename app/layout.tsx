@@ -17,6 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="cupcake">
       <head>
+        <meta property="og:title" content="SaaS Checklist" />
+        <meta
+          property="og:description"
+          content="Self Evalute your product for better customer acquision and rentention"
+        />
+        <meta property="og:image" content="/ogImage.png" />
         <meta
           name="google-site-verification"
           content="cobWBTyC_MfPGG7T839w0lpiBw9T2gnDVmRetRV-Fys"
