@@ -9,8 +9,6 @@ export const metadata: Metadata = {
 };
 
 function Page() {
-
-
   // ... rest of your code
 
   return (
@@ -38,7 +36,6 @@ function Page() {
                 <p>16 Items</p>
               </Link>
               <Link className="indicator link   disabled" href="/Price">
-              
                 <div>
                   Price💰
                   <p className="text-sm">9 Items</p>
@@ -46,18 +43,13 @@ function Page() {
               </Link>
 
               <Link className="indicator link  " href="/Promotion">
-              
                 <div>
                   Promotion📈
                   <p className="text-sm">16 Items</p>
                 </div>
               </Link>
 
-              <Link
-                className="indicator link "
-                href="/Process"
-              >
-              
+              <Link className="indicator link " href="/Processs">
                 <div>
                   Process🚶🏻
                   <p className="text-sm">12 Items</p>

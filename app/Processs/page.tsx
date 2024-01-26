@@ -2,6 +2,12 @@ import React from 'react'
 import Formelement from '../Components/Formelement';
 import Navbar from '../Components/Navbar';
 import TabsDesign from '../Components/TabsDesign';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "SaaS checklist | Price",
+  description: "SaaS, SaaS checklist ,Customer Acquision",
+};
 function Page() {
   return (
     <div>
