@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "SaaS, SaaS checkklist ,Customer Acquision",
 };
 
-function page() {
+function Page() {
   return (
     <main>
       <Navbar />
@@ -26,4 +26,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
