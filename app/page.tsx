@@ -11,10 +11,17 @@ export default function Home() {
     <main className="overflow-hidden">
       <Head>
         <meta property="og:title" content="SaaS Checklist" />
-        <meta property="og:description" content="Self Evalute your product for better customer acquision and rentention" />
+        <meta
+          property="og:description"
+          content="Self Evalute your product for better customer acquision and rentention"
+        />
         <meta property="og:image" content="/ogImage.png" />
+        <meta
+          name="google-site-verification"
+          content="cobWBTyC_MfPGG7T839w0lpiBw9T2gnDVmRetRV-Fys"
+        />
       </Head>
-      
+
       <Navbar />
       <div className=" overflow-hidden bg-base-100 herobg bg-cover flex text-center flex-col items-center overflow-x-hidden justify-between pt-32 px-4  h-screen w-screen lg:pt-20 md:px-0">
         <div className="flex flex-col items-center max-w-2xl md:px-8">
@@ -37,7 +44,10 @@ export default function Home() {
           </div>
           {/*           <InputForm />
            */}{" "}
-          <Link href="/Customer-touchpoints" className="btn btn-primary text-lg">
+          <Link
+            href="/Customer-touchpoints"
+            className="btn btn-primary text-lg"
+          >
             {" "}
             Show Checklist
           </Link>
