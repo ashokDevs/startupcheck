@@ -66,7 +66,7 @@ function Navbar() {
       <div className="navbar-end ">
         <a
           href="https://twitter.com/indieashok"
-          className="btn btn-outline hidden mr-2 md:flex-row md:flex"
+          className="btn  hidden mr-2 md:flex-row md:flex"
           target="_blank"
           rel="noopener noreferrer"
         >

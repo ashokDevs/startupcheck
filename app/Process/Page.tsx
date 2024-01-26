@@ -25,5 +25,6 @@ function Page() {
     </main>
   );
 }
+export const dynamic = "force-dynamic";
 
 export default Page;
