@@ -35,6 +35,14 @@ function Navbar() {
             <li>
               <Link href="/About">blog</Link>
             </li>
+            <li>
+              <a
+                className=""
+                href="https://www.buymeacoffee.com/ashokreddy"
+              >
+                <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=ashokreddy&button_colour=FFDD00&font_colour=000000&font_family=Arial&outline_colour=000000&coffee_colour=ffffff" />
+              </a>
+            </li>
           </ul>
         </div>
         <Link href="/result" className="btn btn-ghost text-xl">
@@ -65,7 +73,10 @@ function Navbar() {
           <img className="" src="/TwitterLogo.png" alt="Twitter Logo" />
           Follow me
         </a>
-        <a href="https://www.buymeacoffee.com/ashokreddy">
+        <a
+          className="hidden md:block"
+          href="https://www.buymeacoffee.com/ashokreddy"
+        >
           <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=ashokreddy&button_colour=FFDD00&font_colour=000000&font_family=Arial&outline_colour=000000&coffee_colour=ffffff" />
         </a>
       </div>
