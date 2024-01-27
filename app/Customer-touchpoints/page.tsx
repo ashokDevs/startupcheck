@@ -53,7 +53,6 @@ function Page() {
                 <div>
                   Process🚶🏻
                   <p className="text-sm">12 Items</p>
-                 
                 </div>
               </Link>
             </div>
