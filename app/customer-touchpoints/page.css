@@ -1,0 +1,40 @@
+.link {
+    position: relative; /* Enable positioning for the arrow */
+    
+    padding: 20px; /* Make space for the arrow */
+    background-color: oklch(var(--b3));
+    font-size: 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 80%;
+    text-decoration: none;
+  
+
+}
+.linkNo{
+  cursor: not-allowed;
+}
+.link>p{
+    font-size: 1rem;
+}
+  
+.link:hover:after {
+    margin-right: 10px;
+    content: "->"; /* Content of the arrow */
+    position: absolute; /* Position independently of the list item */
+    right: 0; /* Place the arrow at the end of the list item */
+    top: 50%; /* Center the arrow vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    font-size: 2rem; /* Set arrow size */
+    color: oklch(var(--bc)); /* Set arrow color */
+  }
+  
+ 
+
+  ul {
+    padding: 50px;
+    display: grid;
+    gap: 10px;  /* Adjust spacing as needed */
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr)); /* Optional for layout */
+  }
+  
