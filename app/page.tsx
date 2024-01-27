@@ -8,15 +8,15 @@ export default function Home() {
       <div className=" overflow-hidden bg-base-100 herobg bg-cover flex text-center flex-col items-center overflow-x-hidden justify-between pt-32 px-4  h-screen w-screen lg:pt-20 md:px-0">
         <div className="flex flex-col items-center max-w-2xl md:px-8">
           <div className="max-w-screen mb-5 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-            <h1 className="w-full text-center text-4xl mb-6 text-base-content font-sans md:text-7xl font-bold  tracking-tight  sm:text-4xl md:mx-auto">
-              <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-2 rounded-md">
+            <h1 className="w-full text-center text-4xl mb-6  font-sans md:text-7xl font-bold  tracking-tight  sm:text-4xl md:mx-auto">
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 Gain
               </span>{" "}
               and{" "}
-              <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-2 rounded-md">
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 Retain
               </span>{" "}
-              Customers With This Checklist
+              Customers Now
             </h1>
             <p className="text-base-content md:text-lg">
               Self Evaluate your 4Ps(Product,Price,Promotion,Process) for
@@ -28,10 +28,11 @@ export default function Home() {
            */}{" "}
           <Link
             href="/customer-touchpoints"
-            className="btn btn-primary text-lg"
+            className="btn btn-primary text-lg group"
           >
             {" "}
-            Show Checklist
+            Start checking ✅
+        
           </Link>
           <br />
         </div>

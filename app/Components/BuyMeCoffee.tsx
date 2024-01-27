@@ -2,19 +2,10 @@ import React from 'react'
 
 function BuyMeCoffee() {
   return (
-    <div>
-      <script
-        data-name="BMC-Widget"
-        data-cfasync="false"
-        src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-        data-id="ashokreddy"
-        data-description="Support me on Buy me a coffee!"
-        data-message="Support me to build more free tools like this ."
-        data-color="#5F7FFF"
-        data-position="Right"
-        data-x_margin="18"
-        data-y_margin="18"
-      ></script>
+    <div className='fixed right-2 bottom-3'>
+      <a className="" href="https://www.buymeacoffee.com/ashokreddy">
+        <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=ashokreddy&button_colour=FFDD00&font_colour=000000&font_family=Arial&outline_colour=000000&coffee_colour=ffffff" />
+      </a>
     </div>
   );
 }

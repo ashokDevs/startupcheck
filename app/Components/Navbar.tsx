@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 function Navbar() {
   return (
     <div className="navbar bg-base-100 lg:w-[80%] w-screen mt-4 mx-auto md:mt-6 ">
@@ -23,7 +24,7 @@ function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-md"
           >
             <li>
               <Link href="/about">About</Link>
@@ -35,22 +36,19 @@ function Navbar() {
             <li>
               <Link href="/about">blog</Link>
             </li>
-            <li>
-              <a
-                className=""
-                href="https://www.buymeacoffee.com/ashokreddy"
-              >
-                <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=ashokreddy&button_colour=FFDD00&font_colour=000000&font_family=Arial&outline_colour=000000&coffee_colour=ffffff" />
-              </a>
-            </li>
+           
           </ul>
         </div>
-        <Link href="/result" className="btn btn-ghost text-xl">
-          Saas Checklist
-        </Link>
+        <Image
+          src="/icon.png"
+          width={70}
+          height={70}
+          alt="Logo"
+          className="h-[50px] w-[50px] md:h-[70px] md:w-[70px]"
+        ></Image>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 text-lg">
           <li>
             <Link href="/pricing">Pricing</Link>
           </li>
@@ -66,14 +64,13 @@ function Navbar() {
       <div className="navbar-end ">
         <a
           href="https://twitter.com/indieashok"
-          className="btn  hidden mr-2 md:flex-row md:flex"
+          className="btn-outline btn  hidden mr-2 md:flex-row md:flex"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Follow me on 
+          Follow me on
           <img className="" src="/TwitterLogo.png" alt="Twitter Logo" />
         </a>
-     
       </div>
     </div>
   );

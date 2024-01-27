@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About me",
@@ -25,16 +26,17 @@ function Page() {
             the biggest problem , it sure helps me alot while building my future
             problems.
           </p>
-          <div>
+          <div className="flex flex-row gap-4">
             <a
               href="https://twitter.com/indieashok"
-              className="btn btn-outline"
+              className="btn btn-secondary"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img className="" src="/TwitterLogo.png" alt="Twitter Logo" />
               Follow me
             </a>
+            <Link href="/" className="btn btn-outline">Go back</Link>
           </div>
         </div>
       </div>

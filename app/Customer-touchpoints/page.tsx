@@ -24,7 +24,7 @@ function Page() {
             satisfaction, build stronger relationships, and ultimately drive
             brand loyalty and increased revenue.
           </h2>
-          <Link className="btn btn-primary mt-7 text-lg" href="/product">
+          <Link className="btn btn-primary mt-7 text-lg group" href="/product">
             Get started
           </Link>
 
