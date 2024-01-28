@@ -6,8 +6,8 @@ import type { Metadata } from "next";
 import BuyMeCoffee from "../Components/BuyMeCoffee";
 
 export const metadata: Metadata = {
-  title: "SaaS checklist | Price",
-  description: "SaaS, SaaS checklist, Customer Acquisition",
+  title: "Price | SaaS checklist",
+  description: "Pricing tips for SaaS startups",
 };
 
 export default function Page() {

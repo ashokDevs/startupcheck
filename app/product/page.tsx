@@ -7,8 +7,8 @@ import BuyMeCoffee from '../Components/BuyMeCoffee';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "SaaS checklist | Product",
-  description: "SaaS, SaaS checkklist ,Customer Acquision",
+  title: "Product | SaaS checklist",
+  description: "Key elements for every SaaS product",
 };
 
 

@@ -6,7 +6,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "SaaS checklist",
-  description: "SaaS, SaaS cehcklist ,Customer Acquision",
+  description: "SaaS chechklist to convert your mvp to full product",
+  twitter :{
+    card: "summary_large_image"
+  }
 };
 
 export default function RootLayout({
