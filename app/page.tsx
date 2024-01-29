@@ -41,13 +41,17 @@ function Page() {
     <main className="max-w-screen  bg-base-100">
       <Navbar />
       <div className="min-w-screen min-h-screen grid items-center gap-4 px-6">
-        <div className="flex flex-col md:items-center justify-center mt-20 md:mt-28 transition-all duration-1000 ease-in-out">
+        <div className="flex flex-col md:items-center justify-center mt-20  transition-all duration-1000 ease-in-out">
           <h1 className="text-5xl text-left md:text-left text-base-content font-bold md:text-6xl  ">
             Build better SaaS Products
           </h1>
           <h2 className="text-md text-left md:text-center text-base-content md:text-lg w-[300px] md:w-[900px] mt-2  ">
-            A Free SaaS Checklist to help you plan, build and grow your Startup
-            .
+            A Free SaaS Checklist to help you plan, build and grow your Startup.
+            Self-evaluate your{" "}
+            <span className="wrap-no">
+              4Ps (Product, Price, Promotion, Process)
+            </span>{" "}
+            for better customer Acquisition and rentention
           </h2>
           <Link
             className="btn text-primary-content btn-primary mt-7 text-lg group self-start md:self-center"
@@ -66,7 +70,9 @@ function Page() {
               >
                 <div>
                   <ImageSection linkText="product" />
-                  <p className="hidden md:inline-flex text-center mt-6 font-bold ">Product </p>
+                  <p className="hidden md:inline-flex text-center mt-6 font-bold ">
+                    Product{" "}
+                  </p>
                 </div>
               </Link>
               <Link
@@ -75,7 +81,9 @@ function Page() {
               >
                 <div>
                   <ImageSection linkText="price" />
-                  <p className="hidden md:inline-flex text-center mt-6 font-bold ">Price</p>
+                  <p className="hidden md:inline-flex text-center mt-6 font-bold ">
+                    Price
+                  </p>
                 </div>
               </Link>
 
@@ -85,7 +93,9 @@ function Page() {
               >
                 <div>
                   <ImageSection linkText="promotion" />
-                  <p className="hidden md:inline-flex text-center mt-6 font-bold ">Promotion</p>
+                  <p className="hidden md:inline-flex text-center mt-6 font-bold ">
+                    Promotion
+                  </p>
                 </div>
               </Link>
 
@@ -95,7 +105,9 @@ function Page() {
               >
                 <div>
                   <ImageSection linkText="process" />
-                  <p className="hidden md:inline-flex  mt-6 font-bold  text-center">Process</p>
+                  <p className="hidden md:inline-flex  mt-6 font-bold  text-center">
+                    Process
+                  </p>
                 </div>
               </Link>
             </div>

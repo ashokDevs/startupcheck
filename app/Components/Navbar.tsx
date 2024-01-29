@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 function Navbar() {
   return (
-    <div className="navbar bg-base-100 lg:w-[80%] w-screen mx-4 px-2 md:px-8 md:mx-auto mt-4 md:mt-6 ">
+    <div className="navbar bg-base-100 lg:w-[80%] w-screen mx-4 px-2 md:px-8 md:mx-auto mt-4 ">
       <div className="  navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -60,7 +60,7 @@ function Navbar() {
           width={100}
           height={100}
           alt="Logo"
-          className="h-[30px] w-[30px] hidden md:inline md:h-[150px] md:w-[150px]"
+          className="h-[30px] w-[30px]  md:inline md:h-[150px] md:w-[150px]"
         ></Image>{" "}
       </div>
       <div className="navbar-center hidden m-auto lg:flex">
@@ -99,7 +99,7 @@ function Navbar() {
         </a>
         <a
           href="https://www.linkedin.com/in/ashok-reddy-kakumanu-8a3078247"
-          className=" ml-8 hidden mr-2 md:flex-row md:flex text-lg"
+          className=" ml-4 hidden mr-2 md:flex-row md:flex text-lg"
           target="_blank"
           rel="noopener noreferrer"
         >
