@@ -4,7 +4,8 @@ import Navbar from '../Components/Navbar';
 import TabsDesign from '../Components/TabsDesign';
 import type { Metadata } from "next";
 import BuyMeCoffee from '../Components/BuyMeCoffee';
-import Link from 'next/link';
+import HoverBtn from '../Components/ui/HoverBtn';
+
 export const metadata: Metadata = {
   title: "SaaS checklist | Promotion",
   description: "SaaS, SaaS checkklist ,Customer Acquision",
@@ -22,12 +23,7 @@ function Page() {
 
       <div className="flex flex-col gap-2 items-center justify-center group">
         <Formelement tab="Promotion" />
-        <Link
-          href="/process"
-          className="btn btn-primary w-[200px] mb-20 text-lg"
-        >
-          Process{"🚶🏻"}
-        </Link>
+        <HoverBtn prev="promotion" props="process" />
       </div>
       <BuyMeCoffee />
     </main>

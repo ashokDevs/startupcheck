@@ -29,7 +29,7 @@ function Page() {
           <div className="flex flex-row gap-4">
             <a
               href="https://twitter.com/indieashok"
-              className="btn btn-secondary"
+              className="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
             >

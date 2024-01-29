@@ -1,42 +1,109 @@
-import Navbar from "./Components/Navbar";
+import React from "react";
 import Link from "next/link";
-export default function Home() {
+import Navbar from "./Components/Navbar";
+import type { Metadata } from "next";
+
+import "./globals.css"; // Assuming this file contains any additional CSS
+
+export const metadata: Metadata = {
+  title: "SaaS checklist | Customer Touchpoints",
+  description: "SaaS, SaaS checklist, Customer Acquisition",
+};
+
+const imageMappings: Record<string, string> = {
+  product: "/product.png",
+  price: "/price.png",
+  promotion: "/promotion.png",
+  process: "/process.png",
+};
+
+const ImageSection: React.FC<{ linkText: keyof typeof imageMappings }> = ({
+  linkText,
+}) => {
+  const lowercasedLinkText = linkText.toLowerCase();
+  const imageSrc = imageMappings[lowercasedLinkText];
 
   return (
-    <main className="overflow-hidden">
+    <div className="image-section w-[80px] md:w-[100px] mt-4">
+      {imageSrc && (
+        <img
+          src={imageSrc}
+          alt={`Image for ${lowercasedLinkText}`}
+          className="image"
+        />
+      )}
+    </div>
+  );
+};
+
+function Page() {
+  return (
+    <main className="max-w-screen  bg-base-100">
       <Navbar />
-      <div className=" overflow-hidden bg-base-100 herobg bg-cover flex text-center flex-col items-center overflow-x-hidden justify-between pt-32 px-4  h-screen w-screen lg:pt-20 md:px-0">
-        <div className="flex flex-col items-center max-w-2xl md:px-8">
-          <div className="max-w-screen mb-5 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-            <h1 className="w-full text-center text-4xl mb-6  font-sans md:text-7xl font-bold  tracking-tight  sm:text-4xl md:mx-auto">
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Gain
-              </span>{" "}
-              and{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Retain
-              </span>{" "}
-              Customers Now
-            </h1>
-            <p className="text-base-content md:text-lg">
-              Self Evaluate your 4Ps(Product,Price,Promotion,Process) for
-              enhanced customer acquisition and retention with This SaaS
-              Checklist!
-            </p>
-          </div>
-          {/*           <InputForm />
-           */}{" "}
+      <div className="min-w-screen min-h-screen grid items-center gap-4 px-6">
+        <div className="flex flex-col md:items-center justify-center mt-20 md:mt-28 transition-all duration-1000 ease-in-out">
+          <h1 className="text-5xl text-left md:text-left text-base-content font-bold md:text-6xl  ">
+            Build better SaaS Products
+          </h1>
+          <h2 className="text-md text-left md:text-center text-base-content md:text-lg w-[300px] md:w-[900px] mt-2  ">
+            A Free SaaS Checklist to help you plan, build and grow your Startup
+            .
+          </h2>
           <Link
-            href="/customer-touchpoints"
-            className="btn btn-primary text-lg group"
+            className="btn text-primary-content btn-primary mt-7 text-lg group self-start md:self-center"
+            href="/product"
           >
-            {" "}
-            Start checking ✅
-        
+            Get started
           </Link>
-          <br />
+
+          <div className="m-auto py-8 max-w-screen overflow-hidden md:px-4 px-2  md:w-[90%] h-fit md:min-h-[300px] rounded-box mt-16 mb-20">
+            <div className="grid  grid-cols-2 md:grid-cols-4 gap-x-20 ">
+              {/* Use Link for each link */}
+
+              <Link
+                className="indicator link text-md md:text-xl "
+                href="/product"
+              >
+                <div>
+                  <ImageSection linkText="product" />
+                  <p className="hidden md:inline-flex text-center mt-6 font-bold ">Product </p>
+                </div>
+              </Link>
+              <Link
+                className="indicator link text-md md:text-xl "
+                href="/price"
+              >
+                <div>
+                  <ImageSection linkText="price" />
+                  <p className="hidden md:inline-flex text-center mt-6 font-bold ">Price</p>
+                </div>
+              </Link>
+
+              <Link
+                className="indicator link text-md md:text-xl"
+                href="/promotion"
+              >
+                <div>
+                  <ImageSection linkText="promotion" />
+                  <p className="hidden md:inline-flex text-center mt-6 font-bold ">Promotion</p>
+                </div>
+              </Link>
+
+              <Link
+                className="indicator link text-md md:text-xl"
+                href="/process"
+              >
+                <div>
+                  <ImageSection linkText="process" />
+                  <p className="hidden md:inline-flex  mt-6 font-bold  text-center">Process</p>
+                </div>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </main>
   );
 }
+
+export default Page;

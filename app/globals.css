@@ -1,7 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
-body{
-    scroll-behavior: smooth;
+
+.link {
+    position: relative; /* Enable positioning for the arrow */
+    
+    padding: 20px; /* Make space for the arrow */
+    font-size: 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    width:250px;
+    aspect-ratio: 1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+   
+  
+
 }
+@media (max-width: 768px) {
+  .link {
+    width: 70px;
+    aspect-ratio: 1;
+    background-color: transparent;
+    
+  }
+}
+
+
+@media (min-width: 769px) {
+  .link {
+    width: 250px;
+  }
+}
+
+.link>p{
+  
+    font-size: 1.5rem;
+    text-align: center;
+}
+  
+
+  .link:hover{
+    
+  transition-duration: 0.4s;
+    box-shadow: 8px 8px 8px rgba(109, 108, 108, 0.1); /* Adjust the values for the shadow effect */
+
+
+  }
+  
+ 
+
+
+  

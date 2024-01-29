@@ -71,7 +71,7 @@ const Formelement = (props: { tab: string }): JSX.Element => {
         {Array.isArray(items) &&
           items.map((item, index) => (
             <div
-              className="border-2 border-base-content m-4 rounded-xl flex flex-row gap-4 px-4 py-6"
+              className=" m-4 rounded-xl flex flex-row gap-4 px-4 py-6"
               key={index}
             >
               <input

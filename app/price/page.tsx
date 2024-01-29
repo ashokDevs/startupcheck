@@ -4,7 +4,9 @@ import Navbar from '../Components/Navbar';
 import TabsDesign from '../Components/TabsDesign';
 import type { Metadata } from "next";
 import BuyMeCoffee from '../Components/BuyMeCoffee';
-import Link from 'next/link';
+import HoverBtn from "../Components/ui/HoverBtn"
+import PageLoad from '../Components/ui/pageLoad';
+
 export const metadata: Metadata = {
   title: "SaaS checklist | Price",
   description: "SaaS, SaaS checklist ,Customer Acquision",
@@ -19,16 +21,12 @@ function Page() {
         h3="Customers perceive value when pricing aligns with expectations and offers transparency. Flexible payment options and competitive pricing enhance accessibility and overall perceived value."
       />
 
-      <div className="flex flex-col gap-2 items-center justify-center ">
+      <div className="flex flex-col gap-2 items-center w-fit ">
         <Formelement tab="Price" />
-        <Link
-          href="/promotion"
-          className="btn btn-primary w-[200px] mb-20 text-lg"
-        >
-          Promotion{"📈"}
-        </Link>
+        <HoverBtn prev='price' props="promotion" />
       </div>
       <BuyMeCoffee />
+      <PageLoad/>
     </main>
   );
 }

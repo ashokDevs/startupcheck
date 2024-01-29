@@ -5,6 +5,7 @@ import Navbar from '../Components/Navbar';
 import type { Metadata } from "next";
 import BuyMeCoffee from '../Components/BuyMeCoffee';
 import Link from 'next/link';
+import HoverBtn from '../Components/ui/HoverBtn';
 
 export const metadata: Metadata = {
   title: "Product | SaaS checklist",
@@ -25,9 +26,7 @@ function Page() {
 
       <div className="flex flex-col gap-2 items-center justify-center">
         <Formelement tab="Product" />
-        <Link href="/price" className="btn btn-primary w-[200px] mb-20 text-lg">
-          Price{"💰"}
-        </Link>
+        <HoverBtn prev="product"  props="price" />
       </div>
       <BuyMeCoffee />
     </main>

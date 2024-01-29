@@ -4,6 +4,7 @@ import Navbar from "../Components/Navbar";
 import TabsDesign from "../Components/TabsDesign";
 import type { Metadata } from "next";
 import BuyMeCoffee from "../Components/BuyMeCoffee";
+import PageLoad from "../Components/ui/pageLoad";
 
 export const metadata: Metadata = {
   title: "Price | SaaS checklist",
@@ -20,9 +21,17 @@ export default function Page() {
       />
       <div className="flex flex-col gap-4 items-center justify-center">
         <Formelement tab="Process" />
-      <p className="font-bold text-lg border bg-accent text-accent-content rounded-lg text-center mb-20 p-4">Thank you for making it this far</p>
+       
       </div>
       <BuyMeCoffee />
+      <PageLoad />
+      <iframe
+        
+        src="https://airtable.com/embed/app8NU0RBC7xUHEHh/pagthYSYZmYMLxD6f/form"
+        width="100%"
+        height="533"
+        className="bg-transparent; border-2 border-solid "
+      ></iframe>
     </main>
   );
 }
