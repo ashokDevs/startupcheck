@@ -4,7 +4,6 @@ import TabsDesign from '../Components/TabsDesign';
 import Navbar from '../Components/Navbar';
 import type { Metadata } from "next";
 import BuyMeCoffee from '../Components/BuyMeCoffee';
-import Link from 'next/link';
 import HoverBtn from '../Components/ui/HoverBtn';
 
 export const metadata: Metadata = {

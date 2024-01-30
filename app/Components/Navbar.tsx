@@ -60,7 +60,7 @@ function Navbar() {
           width={100}
           height={100}
           alt="Logo"
-          className="h-[30px] w-[30px]  md:inline md:h-[150px] md:w-[150px]"
+          className="h-[80px] w-[80px]  md:inline md:h-[150px] md:w-[150px]"
         ></Image>{" "}
       </div>
       <div className="navbar-center hidden m-auto lg:flex">
